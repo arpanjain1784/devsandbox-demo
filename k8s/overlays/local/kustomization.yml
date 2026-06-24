@@ -1,0 +1,8 @@
+resources:
+  - ../../base
+images:
+  - name: demo
+    newName: demo
+    newTag: latest
+patches:
+  - path: patch-ingress.yml

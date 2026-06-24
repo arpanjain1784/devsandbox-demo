@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+images:
+  - name: demo
+    newName: 127.0.0.1:5001/demo
+    newTag: latest
+patches:
+  - path: patch-deployment.yml
+  - path: patch-ingress.yml

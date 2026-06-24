@@ -1,0 +1,31 @@
+# pipeline.yaml
+# Platform configuration file — commit this to version control.
+# All fields are optional. Uncomment and set values to override platform defaults.
+
+version: "1"
+
+app:
+  # name: my-service              # Override the app name (default: derived from folder name)
+  # port: 8000                    # Override the container port (default: 8000)
+  # python_version: "3.12"        # Override Python version (default: 3.12)
+  # health_path: "/health"           # Override health check path
+  # test_command: "pytest tests/"     # Override test command
+
+# env:
+#   - name: ENVIRONMENT
+#     value: "production"
+#   - name: FEATURE_FLAGS_URL
+#     value: "https://flags.internal.yourcompany.com"
+
+# secrets:
+#   - name: DATABASE_URL
+#     secret_name: my-db-secret
+#     secret_key: connection-string
+
+policies:
+  mode: opt-out
+  # disabled:
+  #   - api-versioning
+  # config:
+  #   feature-flags:
+  #     library: "your-flag-library"
